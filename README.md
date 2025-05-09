@@ -14,6 +14,6 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-![20250504_1958_Character Design Variations_remix_01jte3ph9dfess54e4gqxq0dpr (1)-min](https://github.com/user-attachments/assets/2c07f8bf-9758-4980-aedb-09b9b26a12ad)
+<img src="https://github.com/user-attachments/assets/2c07f8bf-9758-4980-aedb-09b9b26a12ad" alt="Character Design Variations" width="500">
 
 "To build a deeply intuitive commerce platform where discovery feels effortless, decisions feel guided, and buying anything — from the practical to the personal — happens in one seamless experience. Starting in the MENA region, ci0r embeds intelligence into every layer, transforming shopping into an extension of thought — a step toward a smarter, more contextual way to live."
