@@ -1,27 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ci0r - Coming Soon</title>
-  <style>
-    body {
-      background-color: #000;
-      color: #00ffff;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding-top: 20%;
-    }
-    h1 {
-      font-size: 3rem;
-    }
-    p {
-      font-size: 1.2rem;
-    }
-  </style>
-</head>
-<body>
-  <h1>ci0r</h1>
-  <p>Everything from Zero. Coming Soon.</p>
-</body>
-</html>
+import React from "react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { motion } from "framer-motion";
+
+export default function LandingPage() {
+  return (
+    <div className="min-h-screen bg-white text-gray-900 p-8">
+      <header className="mb-12 text-center">
+        <motion.h1
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-5xl font-bold tracking-tight"
+        >
+          Welcome to ci0r
+        </motion.h1>
+        <p className="text-xl mt-4">
+          The intuitive commerce platform built for the future.
+        </p>
+      </header>
+
+      <main className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <Card className="rounded-2xl shadow-md p-4">
+          <CardContent>
+            <h2 className="text-2xl font-semibold mb-2">Smart Discovery</h2>
+            <p>
+              Use AI-powered tools like visual search and contextual chat to find
+              exactly what you need—fast.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card className="rounded-2xl shadow-md p-4">
+          <CardContent>
+            <h2 className="text-2xl font-semibold mb-2">One Unified Platform</h2>
+            <p>
+              Shop furniture, fashion, tech, groceries and more—seamlessly, from a
+              single platform.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card className="rounded-2xl shadow-md p-4">
+          <CardContent>
+            <h2 className="text-2xl font-semibold mb-2">Guided Experience</h2>
+            <p>
+              Chat with our assistant to get recommendations tailored to your needs,
+              context, and space.
+            </p>
+          </CardContent>
+        </Card>
+      </main>
+
+      <div className="text-center mt-12">
+        <Button className="text-lg px-6 py-3 rounded-full">Explore Now</Button>
+      </div>
+    </div>
+  );
+}
